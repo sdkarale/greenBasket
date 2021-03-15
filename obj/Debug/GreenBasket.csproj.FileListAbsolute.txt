@@ -1,0 +1,5 @@
+E:\project\GreenBasket\GreenBasket\bin\GreenBasket.dll
+E:\project\GreenBasket\GreenBasket\bin\GreenBasket.pdb
+E:\project\GreenBasket\GreenBasket\obj\Debug\GreenBasket.csprojResolveAssemblyReference.cache
+E:\project\GreenBasket\GreenBasket\obj\Debug\GreenBasket.dll
+E:\project\GreenBasket\GreenBasket\obj\Debug\GreenBasket.pdb
