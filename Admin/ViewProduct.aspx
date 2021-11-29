@@ -25,7 +25,7 @@
      <div >
          <hr />
     <a href='<%#"DeleteProduct.aspx?id="+Eval("pid") %>' class="btn btn-outline-success">Delete</a>
-     <a href='<%#"../Details.aspx?id="+Eval("pid") %>' class="btn btn-outline-danger ms-4">Details</a>
+    
   </div>
       
   </div>

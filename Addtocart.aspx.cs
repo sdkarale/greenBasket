@@ -35,7 +35,7 @@ namespace GreenBasket
                     if (i > 0)
                     {BindData();
                     }
-                    con.Close();
+                    con.Close(); //closes connection
                    
                 }
             }

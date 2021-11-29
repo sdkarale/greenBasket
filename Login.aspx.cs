@@ -20,7 +20,14 @@ namespace GreenBasket
         {
             if (CheckBox1.Checked)
             {
-                string c = ConfigurationManager.ConnectionStrings[@"mycon"].ToString();
+                if (txtUser.Text=="Admin" && txtPassword.Text=="Admin123")
+                {
+                    Session.Add("user", txtUser.Text);
+                    Response.Redirect("~/Admin/ViewProduct.aspx");
+               }
+               else
+               {
+                    string c = ConfigurationManager.ConnectionStrings[@"mycon"].ToString();
                 SqlConnection con = new SqlConnection(c);
                 SqlCommand cmd = new SqlCommand("select * from Users where uemail='"+txtUser.Text+"' and upassword='"+txtPassword.Text+"'", con);
 
@@ -40,9 +47,11 @@ namespace GreenBasket
                 else
                 {
 
-                    Literal1.Text = "wrong  Credentials";
+                    Literal1.Text = "wrong Credentials";
                 }
                 con.Close();
+               }
+
             }
             else
                 Literal1.Text = "Select Checkbox";
